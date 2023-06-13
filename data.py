@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1rCpqLyEF2wRimL56AGL5hoAi_tH_vYMM
 """
 
-!pip install streamlit
-!pip install xhtml2pdf
 
 import streamlit as st
 import os
@@ -96,10 +94,3 @@ if __name__ == "__main__":
   print('Public URL:', ngrok_tunnel.public_url)
   main()
 
-!mkdir -p ~/.streamlit/
-
-!echo "server.port = $PORT" >> ~/.streamlit/config.toml
-
-!echo "[server]\nheadless = true\nenableCORS=false\n" > ~/.streamlit/config.toml
-
-!pip install streamlit pyngrok
